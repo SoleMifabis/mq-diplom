@@ -1,0 +1,524 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+    min-width: 320px;
+}
+
+.welcome {
+    position: relative;
+    background-image: url("../img/football_767.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-color: black;
+    padding: 0 20px;
+    min-height: 567px;
+}
+
+.welcome::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    background-color: #0a0e34;
+    opacity: 0.9;
+}
+
+.header-logo {
+    position: relative;
+    z-index: 2;
+
+    display: block;
+    block-size: border-box;
+    text-align: center;
+}
+
+.logo-text {
+    width: 136px;
+    height: 38px;
+    margin-top: 33px;
+}
+
+.welcome-title {
+    position: relative;
+    z-index: 2;
+
+    display: flex;
+    flex-direction: column;
+    margin-top: 135px;
+  
+}
+
+.first-line {
+    font-size: 28px;
+    letter-spacing: 1px;
+    line-height: 31px;
+    color: #ffffff;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.second-line {
+    margin: 30px 0 88px 44px;
+        
+    align-self: flex-end;
+    font-size: 28px;
+    letter-spacing: 1px;
+    color: #ffffff;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.store-links {
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 84px;
+}
+
+.apple-store, .google-store {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    width: 100%;
+    height: 35px;
+    border-radius: 17px;
+    background-color: #5e42b0;
+
+    position: relative;
+    z-index: 2;
+}
+
+.google-store {
+    margin-top: 14px;
+}
+
+.apple-link, .google-link {
+    text-decoration: none;
+    display: flex;
+    margin: auto;
+    align-items: center;
+}
+
+.apple-icon, .google-icon {
+    fill: #ffffff;
+    width: 25px;
+    height: 25px;
+    margin: 0px;
+    justify-content: center;
+}
+
+.apple-link-title, .google-link-title {
+    display: flex;
+    flex-direction: column;
+    margin-left: 8px;   
+}
+
+.apple-link-title-download, .google-link-title-get  {
+    font-size: 8px;
+    letter-spacing: 0px;
+    color: #ffffff;
+    font-family: "Open Sans";
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.apple-link-title-store, .google-link-title-play {
+    font-size: 8px;
+    letter-spacing: 0px;
+    color: #ffffff;
+    
+    font-weight: 700;
+    text-transform: uppercase;    
+}
+
+@media (min-width: 641px) {
+    .welcome {
+        background-image: url(../img/football_1280.jpg);
+        min-height: 960px;
+    }
+
+    .logo-text {
+        width: 205px;
+        height: 57px;
+        margin-top: 38px;
+    }
+
+    .welcome-title {
+        margin-top: 180px;
+        margin-bottom: 0;
+    }
+
+    .first-line  {
+        font-size: 64px;
+        letter-spacing: 3px;
+    }
+
+    .second-line {
+        font-size: 64px;
+        letter-spacing: 3px;
+        margin-left: 106px;
+        margin-bottom: 309px;
+    }
+
+    .store-links {
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 90px;
+    }
+
+    .apple-store, .google-store {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    
+        width: 311px;
+        height: 77px;
+        border-radius: 38px;
+        filter: drop-shadow(8px 13.856px 12px #0a0e34);
+        background-color: #5e42b0;
+    }
+
+    .google-store {
+        margin-top: 0;
+        margin-left: 30px;
+    }
+
+    .apple-icon, .google-icon {
+        width: 50px;
+        height: 50px;
+        align-items: center;
+    }
+
+    .apple-link-title, .google-link-title {
+        margin-left: 25px;   
+    }
+
+    .apple-link-title-download, .google-link-title-get  {
+        font-size: 14px;
+        letter-spacing: 1px;
+        line-height: 20px;
+        font-weight: 300;
+    }
+    
+    .apple-link-title-store, .google-link-title-play {
+        font-size: 14px;
+        letter-spacing: 1px;
+        line-height: 20px;
+    }
+    
+}
+
+@media (min-width: 961px) {
+    .welcome {
+        background-image: url(../img/football_1920.jpg);
+    }
+
+    .logo-text {
+        width: 193px;
+        height: 52px;
+        margin-top: 44px;
+    }
+
+    .welcome-title {
+        margin-top: 296px;
+    }
+
+    .store-links {
+        margin-bottom: 110px;
+    }
+
+    .apple-link-title-download, .google-link-title-get  {
+        font-weight: 400;
+    }
+}
+
+@media (min-width: 1250px) {
+    .first-line {
+        font-size: 90px;
+        letter-spacing: 5px;
+    }
+
+    .second-line {
+        margin-bottom: 223px;
+        font-size: 90px;
+        letter-spacing: 5px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.footer {
+    min-height: 567px;
+    padding: 0 20px;
+    position: relative;
+    background-image: url("../img/game_767.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-color: black;
+}
+
+.footer::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    background-color: #0a0e34;
+    opacity: 0.9;
+}
+
+.footer-leader {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-logo {
+    fill: #ffffff;
+
+    position: relative;
+    z-index: 2;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+        
+    width: 73px;
+    height: 73px;
+    border-radius: 17px;
+    background-color: #5e42b0;
+}
+
+.footer-short-logo {
+    width: 58px;
+    height: 58px;
+}
+
+.footer-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 58px;
+
+    position: relative;
+    z-index: 2;
+
+}
+
+.footer-first-line {
+    font-size: 32px;
+    letter-spacing: 2px;
+    color: #ffffff;
+    font-weight: 700;
+    text-transform: uppercase; 
+}
+
+.footer-second-line {
+    font-size: 14px;
+    letter-spacing: 1px;
+    color: #9b8ec1;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.footer-store-links {
+    margin: 75px auto 82px;
+}
+
+.footer-full-logo {
+    position: relative;
+    z-index: 2;
+
+    display: block;
+    block-size: border-box;
+    text-align: center;
+}
+
+.footer-logo-text {
+    width: 136px;
+    height: 38px;
+    margin-bottom: 82px;
+}
+
+@media (min-width: 641px) {
+    .footer {
+        background-image: url(../img/game_1280.jpg);
+        min-height: 960px;
+    }
+
+    .footer-logo {
+        margin-top: 124px;
+        width: 130px;
+        height: 130px;
+    }
+
+    .footer-short-logo {
+        width: 105px;
+        height: 84px;
+    }
+
+    .footer-title {
+        margin-top: 80px;
+    }
+
+    .footer-first-line {
+        font-size: 80px;
+        letter-spacing: 4px;
+        line-height: 60px;
+    }
+
+    .footer-second-line {
+        font-size: 36px;
+        line-height: 60px;
+        color: #a496ca;
+        margin-bottom: 285px;
+    }
+
+    .footer-store-links {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 56px;
+        margin-top: 0;
+    }
+
+    .apple-store, .google-store {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    
+        width: 311px;
+        height: 77px;
+        border-radius: 38px;
+        filter: drop-shadow(8px 13.856px 12px #0a0e34);
+        background-color: #5e42b0;
+    }
+
+    .google-store {
+        margin-top: 0;
+        margin-left: 30px;
+    }
+
+    .apple-icon, .google-icon {
+        width: 50px;
+        height: 50px;
+        align-items: center;
+    }
+
+    .apple-link-title, .google-link-title {
+        margin-left: 25px;   
+    }
+
+    .apple-link-title-download, .google-link-title-get  {
+        font-size: 14px;
+        letter-spacing: 1px;
+        line-height: 20px;
+        font-weight: 300;
+    }
+    
+    .apple-link-title-store, .google-link-title-play {
+        font-size: 14px;
+        letter-spacing: 1px;
+        line-height: 20px;
+    }
+
+    .footer-logo-text {
+        width: 205px;
+        height: 58px;
+        margin-bottom: 20px;
+    }
+}
+
+@media (min-width: 641px) and (max-width: 751px) {
+    .footer-first-line {
+        font-size: 60px;
+        letter-spacing: 4px;
+        line-height: 60px;    
+    }
+    
+    .footer-second-line {
+        font-size: 26px;
+        line-height: 60px;
+        color: #a496ca;
+    }
+}
+
+@media (min-width: 961px) {
+    .footer {
+        background-image: url(../img/game_1920.jpg);
+    }
+
+    .footer-leader {
+        display: flex;
+        flex-direction: row;  
+        height: 140px;    
+        padding-top: 225px;
+        justify-content: center;      
+    }
+
+    .footer-logo {
+        width: 132px;
+        height: 137px;
+        margin: 0;
+    }
+
+    .footer-short-logo {
+        height: 85px;
+        width: 102px;
+    }
+
+    .footer-title {
+        margin-left: 40px;
+        margin-top: 0;
+        margin-bottom: 0;
+        align-items: flex-start;
+        justify-content: center;
+    
+    }
+
+    .footer-first-line {
+        font-size: 80px;
+        letter-spacing: 2px;
+        line-height: 60px;
+    }
+
+    .footer-second-line {
+        margin-bottom: 0;
+        margin-top: 20px;
+        font-size: 30px;
+        line-height: 34px;
+    }
+
+    .footer-store-links {
+        margin: 152px auto 260px;
+    }
+
+    .apple-link-title-download, .google-link-title-get  {
+        font-weight: 400;
+    }
+}
