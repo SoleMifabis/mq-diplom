@@ -282,6 +282,7 @@ body {
 }
 
 h2 {
+    display: block;
     font-size: 50px;
     line-height: 60px;
     color: #e7e7e7;
@@ -294,6 +295,7 @@ h2 {
 }
 
 h4 {
+    display: block;
     font-size: 23px;
     letter-spacing: 1px;
     line-height: 34px;
@@ -410,8 +412,8 @@ h4 {
 }
 
 p {
+    display: block;
     min-width: 280px;
-    min-height: 108px;
     font-size: 15px;
     letter-spacing: 1px;
     line-height: 18px;
@@ -518,13 +520,14 @@ p {
     }
 
     p {
-        width: 443px;
+
         font-size: 16px;
         line-height: 28px;
     }
 
     .players-connection-text, .players-collaboration-text, .players-growth-text {
         padding: 0 32px;
+        width: 443px;
     }
 
     .players-img {
@@ -542,13 +545,20 @@ p {
         flex-wrap: wrap;
     }
     
+    .athlets-img {
+        top: 30px;
+        left: 15%;
+        transform: none;
+        width: 35%;
+    }
     
     .athlets-title {
-        padding: 116px 0 100px 45%;
+        padding: 116px 0 100px 50%;
     }
 
     .athlets-connection-title, .athlets-collaboration-title, .athlets-growth-title {
-        padding-left: 45%;
+        padding-left: 50%;
+
     }
 
     .athlets-connection {
@@ -569,12 +579,12 @@ p {
     }
 
     .athlets-connection-text, .athlets-collaboration-text, .athlets-growth-text {
-        padding-left: 45%;
-        min-width: 717px;
+        padding-left: 50%;
+
     }
 
     .players-title {
-        padding: 116px 0 100px;
+        padding: 116px 20px 100px;
     }
 
     .players-connection {
@@ -595,50 +605,81 @@ p {
     }
 
     .players-connection-title, .players-collaboration-title, .players-growth-title {
-        padding: 0 12px;
+        padding: 0 20px;
     }
 
     p {
-        min-width: 717px;
         font-size: 20px;
     }
 
     .players-connection-text, .players-collaboration-text, .players-growth-text {
-        padding: 0 12px;
+        padding: 0 20px;
+        width: 717px;
+    }
+
+    .players-img {
+        top: 30px;
+        right: 0;
+        transform: none;
+        width: 35%;     
     }
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
 .be-active, .find-contact, .work-it {
-    min-width: 280px;
     display: flex;
     flex-direction: column;
 }
 
 .be-active-img, .find-contact-img, .work-it-img {
     display: flex;
+    box-sizing: border-box;
     justify-content: center;
     align-items: center;
     background-color: #eff6f1;
-    min-width: 280px;
+    max-width: 100%;
 }
 
+.card-number {
+    font-size: 14px;
+    letter-spacing: 1px;
+    line-height: 34px;
+    color: #f5f6f7;
+    font-weight: 700;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+    left: 20px;
+    top: -30%;
+    width: 70px;
+    height: 70px;
+    background-color: #5e42b0;
+}
+
+.card-number::after {
+    content: "";
+
+    width: 15px;
+    height: 4px;
+    border-radius: 1px;
+    background-color: #ffffff;
+    position: absolute;
+    top: 45px;
+}
+
+
 .be-active-card, .find-contact-card, .work-it-card {
-    padding: 0 20px;
+    box-sizing: border-box;
+    padding-left: 20px;
+    min-width: 280px;
+    position: relative;
 }
 
 h3 {
+    display: block;
     text-transform: uppercase;
     font-size: 28px;
     letter-spacing: 1px;
@@ -651,18 +692,37 @@ h3 {
 }
 
 .be-active-text, .find-contact-text, .work-it-text {
+    display: block;
+    box-sizing: content-box;
     font-size: 16px;
     letter-spacing: 1px;
     line-height: 20px;
     color: #000000;
     font-weight: 400;
 
-    margin-bottom: 75px;
+    margin-bottom: 25px;
+    padding: 0;
+    
 }
 
 @media (min-width: 641px) {
-    .be-active, .find-contact, .work-it {
-        min-width: 665px;
+    .card-number {
+        font-size: 24px;
+
+        left: 24px;
+    
+        width: 116px;
+        height: 116px;
+    }
+    
+    .card-number::after {
+        content: "";
+    
+        width: 25px;
+        height: 5px;
+        border-radius: 2px;
+        position: absolute;
+        top: 75px;
     }
     
     h3 {
@@ -681,28 +741,71 @@ h3 {
         font-weight: 400;
     
         margin-bottom: 95px;
+        min-width: 665px;
     }
 }
 
 @media (min-width: 961px) {
-    .content {
-        flex-wrap: wrap;
-    }
-
     .be-active, .find-contact, .work-it {
-        width: 50%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        min-height: 730px;
+        min-width: 1530px;
+        justify-content: stretch;
+
+        position: relative;
+
     }
 
     .be-active-img, .find-contact-img, .work-it-img {
+        justify-content: center;
+        align-items: center;
+        background-color: #eff6f1; 
+        max-width: 100%;
+        display: flex;
+    }
+    
+    .card-number {
         display: flex;
         justify-content: center;
         align-items: center;
-        background-color: #eff6f1
+    
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        width: 168px;
+        height: 155px;
+        background-color: #5e42b0;
     }
     
+    .card-number::after {
+        content: "";
+    
+        width: 26px;
+        height: 5px;
+        border-radius: 1px;
+        background-color: #ffffff;
+        position: absolute;
+        top: 92px;
+    }
 
-    .be-active-card, .find-contact-card, .work-it-card {
+    .find-contact {
+        flex-direction: row-reverse;
+
+    }
+
+    .be-active-card, .work-it-card {
         padding: 0 0 0 125px;
+    }
+    
+    .find-contact-card {
+        padding: 0 125px 0 0;
+        box-sizing: border-box;
+
+        padding-left: 30px;
     }
 
     h3 {
@@ -713,6 +816,8 @@ h3 {
     .be-active-text, .find-contact-text, .work-it-text {
         margin-bottom: 216px;
     }
+
+
 }
 
 
@@ -780,15 +885,15 @@ h3 {
 }
 
 .footer-first-line {
-    font-size: 32px;
-    letter-spacing: 2px;
+    font-size: 30px;
+    letter-spacing: 1px;
     color: #ffffff;
     font-weight: 700;
     text-transform: uppercase; 
 }
 
 .footer-second-line {
-    font-size: 14px;
+    font-size: 12px;
     letter-spacing: 1px;
     color: #9b8ec1;
     font-weight: 400;
