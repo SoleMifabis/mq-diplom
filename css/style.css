@@ -538,18 +538,24 @@ p {
 }
 
 @media (min-width: 961px) {
+        
     .athlets, .players {
         min-width: 717px;
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
     }
+
+    .players {
+        overflow: hidden;
+    }
     
     .athlets-img {
         top: 30px;
-        left: 15%;
+        left: 5%;
+        right: 0;
         transform: none;
-        width: 35%;
+        width: 50%;
     }
     
     .athlets-title {
@@ -562,18 +568,16 @@ p {
     }
 
     .athlets-connection {
-        min-height: 136px;
         padding: 0;
     }
 
     .athlets-collaboration {
-        min-height: 248px;
         padding-top: 60px;
         min-width: 717px;
+
     }
 
     .athlets-growth {
-        min-height: 220px;
         padding-top: 55px;
         min-width: 717px;
     }
@@ -594,13 +598,13 @@ p {
 
     .players-collaboration {
         min-width: 717px;
-        min-height: 228px;
+       
         padding-top: 54px;
     }
 
     .players-growth {
         min-width: 717px;
-        min-height: 196px;
+        
         padding-top: 58px;
     }
 
@@ -620,8 +624,10 @@ p {
     .players-img {
         top: 30px;
         right: 0;
-        transform: none;
-        width: 35%;     
+        left: 40%;
+        width: 70%;
+
+    
     }
 }
 
@@ -631,16 +637,23 @@ p {
     flex-direction: column;
 }
 
-.be-active-img, .find-contact-img, .work-it-img {
+
+.visual {
+    position: relative;
     display: flex;
+    width: 100%;
+}
+
+
+.be-active-img, .find-contact-img, .work-it-img {
     box-sizing: border-box;
     justify-content: center;
     align-items: center;
     background-color: #eff6f1;
-    max-width: 100%;
+    width: 100%;
 }
 
-.card-number {
+.card-number, .card-number-contact {
     font-size: 14px;
     letter-spacing: 1px;
     line-height: 34px;
@@ -653,13 +666,13 @@ p {
 
     position: absolute;
     left: 20px;
-    top: -30%;
+    bottom: 0;
     width: 70px;
     height: 70px;
     background-color: #5e42b0;
 }
 
-.card-number::after {
+.card-number::after, .card-number-contact::after {
     content: "";
 
     width: 15px;
@@ -675,7 +688,6 @@ p {
     box-sizing: border-box;
     padding-left: 20px;
     min-width: 280px;
-    position: relative;
 }
 
 h3 {
@@ -706,7 +718,7 @@ h3 {
 }
 
 @media (min-width: 641px) {
-    .card-number {
+    .card-number, .card-number-contact {
         font-size: 24px;
 
         left: 24px;
@@ -715,7 +727,7 @@ h3 {
         height: 116px;
     }
     
-    .card-number::after {
+    .card-number::after, .card-number-contact::after {
         content: "";
     
         width: 25px;
@@ -741,84 +753,97 @@ h3 {
         font-weight: 400;
     
         margin-bottom: 95px;
-        min-width: 665px;
+
     }
 }
 
 @media (min-width: 961px) {
-    .be-active, .find-contact, .work-it {
+    .second-part {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .be-active, .work-it {
         display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
-        min-height: 730px;
-        min-width: 1530px;
-        justify-content: stretch;
+        width: 100%;
+      
+    }
 
-        position: relative;
-
+    .find-contact {
+        display: flex;
+        flex-direction: row-reverse;
+        flex-wrap: nowrap;
+        width: 100%;
     }
 
     .be-active-img, .find-contact-img, .work-it-img {
-        justify-content: center;
-        align-items: center;
-        background-color: #eff6f1; 
+        max-width: unset;
         max-width: 100%;
-        display: flex;
+        height: 100%;
+        flex: 1 1 100%;
     }
-    
+
+    .be-active-card, .work-it-card {
+        box-sizing: border-box;
+        flex: 1 1 100%;
+        padding-left: 125px;
+    }
+
+    .find-contact-card {
+        box-sizing: border-box;
+        flex: 1 1 100%;
+        padding-right: 125px;
+
+    }
+
+    h3 {
+        margin-top: 250px;
+        margin-bottom: 105px;
+        font-size: 70px;
+        min-width: 530px;
+
+    }
+
+    .be-active-text, .find-contact-text, .work-it-text {
+        margin-bottom: 216px;
+        min-width: 530px;
+    }
+
+
     .card-number {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    
-        position: absolute;
-        top: 0;
-        left: 0;
-        bottom: 0;
+        bottom: unset;
+        left: unset;
         right: 0;
+        transform: translate(50%, 130%);
+
         width: 168px;
         height: 155px;
-        background-color: #5e42b0;
     }
     
-    .card-number::after {
+    .card-number-contact {
+        bottom: unset;
+        left: 0;
+        transform: translate(-50%, 130%);
+
+        width: 168px;
+        height: 155px;
+    }
+
+    .card-number::after, .card-number-contact::after {
         content: "";
     
         width: 26px;
-        height: 5px;
         border-radius: 1px;
-        background-color: #ffffff;
         position: absolute;
         top: 92px;
     }
 
-    .find-contact {
-        flex-direction: row-reverse;
-
-    }
-
-    .be-active-card, .work-it-card {
-        padding: 0 0 0 125px;
-    }
-    
-    .find-contact-card {
-        padding: 0 125px 0 0;
-        box-sizing: border-box;
-
-        padding-left: 30px;
-    }
-
-    h3 {
-        margin-top: 260px;
-        margin-bottom: 105px;
-    }
-    
-    .be-active-text, .find-contact-text, .work-it-text {
-        margin-bottom: 216px;
-    }
-
-
 }
+
 
 
 
