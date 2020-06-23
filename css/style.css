@@ -278,7 +278,7 @@ body {
     top: 80px;
     left: 50%;
     transform: translateX(-50%);
-    width: 65%;
+
 }
 
 h2 {
@@ -491,6 +491,9 @@ p {
         background-color: #ffffff;
     }
 
+    .players {
+        overflow: hidden;
+    }
     
     .players-connection {
         min-height: 168px;
@@ -564,7 +567,6 @@ p {
 
     .athlets-connection-title, .athlets-collaboration-title, .athlets-growth-title {
         padding-left: 50%;
-
     }
 
     .athlets-connection {
@@ -574,7 +576,6 @@ p {
     .athlets-collaboration {
         padding-top: 60px;
         min-width: 717px;
-
     }
 
     .athlets-growth {
@@ -584,7 +585,6 @@ p {
 
     .athlets-connection-text, .athlets-collaboration-text, .athlets-growth-text {
         padding-left: 50%;
-
     }
 
     .players-title {
@@ -598,13 +598,11 @@ p {
 
     .players-collaboration {
         min-width: 717px;
-       
         padding-top: 54px;
     }
 
     .players-growth {
         min-width: 717px;
-        
         padding-top: 58px;
     }
 
@@ -626,8 +624,6 @@ p {
         right: 0;
         left: 40%;
         width: 70%;
-
-    
     }
 }
 
@@ -821,22 +817,21 @@ h3 {
 
         padding-right: 125px;
         width: 50%;
-
     }
 
     h3 {
         margin-top: 250px;
         margin-bottom: 105px;
         font-size: 70px;
-        min-width: 530px;
-
     }
 
     .be-active-text, .find-contact-text, .work-it-text {
         margin-bottom: 216px;
-        min-width: 530px;
     }
 
+    .be-active-text, .work-it-text {
+        margin-right: 24px;
+    }
 
     .card-number {
         bottom: unset;
